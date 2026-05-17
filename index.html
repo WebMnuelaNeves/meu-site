@@ -7,97 +7,141 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #0f172a, #1e293b);
             color: white;
+        }
+
+        /* NAVBAR */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* HERO */
+        .hero {
             text-align: center;
+            padding: 80px 20px;
         }
 
-        .container {
-            padding: 60px 20px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 650px;
-            margin: auto;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-        }
-
-        h1 {
-            font-size: 40px;
+        .hero h1 {
+            font-size: 45px;
             margin-bottom: 10px;
         }
 
-        h2 {
+        .hero p {
             font-size: 18px;
-            font-weight: normal;
             color: #cbd5e1;
         }
 
-        p {
-            font-size: 18px;
-            color: #e2e8f0;
-            margin-top: 15px;
-            line-height: 1.6;
+        /* SECTIONS */
+        .section {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
         }
 
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+
+        /* BOTÃO */
         .btn {
             display: inline-block;
-            margin-top: 25px;
+            margin-top: 20px;
             padding: 14px 28px;
             background: #25D366;
             color: white;
             text-decoration: none;
             border-radius: 12px;
             font-weight: bold;
-            transition: 0.3s;
         }
 
         .btn:hover {
             background: #1ebe5d;
         }
 
+        /* FOOTER */
         .footer {
-            margin-top: 30px;
-            font-size: 14px;
+            text-align: center;
+            padding: 30px;
             color: #94a3b8;
+            font-size: 14px;
         }
+
     </style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- NAV -->
+<div class="nav">
+    <div><strong>Manuela Web 💻</strong></div>
+    <div>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Olá, eu sou a Manuela 💻</h1>
+    <p>Desenvolvedora Web em formação | Criação de sites modernos</p>
+
+    <a class="btn" href="#contacto">Falar comigo</a>
+</div>
+
+<!-- SOBRE -->
+<div class="section" id="sobre">
+    <h2>👩‍💻 Sobre mim</h2>
+    <div class="card">
+        Sou apaixonada por tecnologia e desenvolvimento web.
+        Estou a aprender HTML, CSS e JavaScript para criar projetos reais.
+    </div>
+</div>
+
+<!-- SERVIÇOS -->
+<div class="section" id="servicos">
+    <h2>⚙️ Serviços</h2>
+
+    <div class="card">✔ Criação de sites pessoais</div>
+    <div class="card">✔ Portfólios modernos</div>
+    <div class="card">✔ Websites simples e responsivos</div>
+</div>
+
+<!-- CONTACTO -->
+<div class="section" id="contacto">
+    <h2>📱 Contacto</h2>
 
     <div class="card">
+        Queres falar comigo ou pedir um site?
+        <br><br>
 
-        <h1>Manuela Web 💻</h1>
-
-        <h2>Desenvolvedora Web em formação</h2>
-
-        <p>
-            Crio sites modernos, simples e profissionais utilizando HTML, CSS e JavaScript.
-            Estou em constante aprendizagem e evolução na área da tecnologia.
-        </p>
-
-       <!-- BOTÃO WHATSAPP -->
-<a class="btn"
-   href="https://wa.me/351912885467"
-   target="_blank">
-   💬 Falar comigo no WhatsApp
-</a>
-
-        <div class="footer">
-            Portfólio pessoal • Tecnologia & Programação
-        </div>
-
+        <a class="btn"
+           href="https://wa.me/351912885467"
+           target="_blank">
+           💬 WhatsApp
+        </a>
     </div>
+</div>
 
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Manuela Web • Portfólio pessoal
 </div>
 
 </body>
