@@ -1,70 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-    <title>Manuela Web</title>
+    <meta charset="UTF-8">
+    <title>Manuela Web | Portfólio</title>
 
     <style>
-
-        body{
-            background-color:#f5f5f5;
-            font-family:Arial;
-            text-align:center;
-            padding:40px;
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
         }
 
-        .card{
-            background:white;
-            padding:40px;
-            border-radius:20px;
-            max-width:600px;
-            margin:auto;
-            box-shadow:0px 0px 20px rgba(0,0,0,0.1);
+        .container {
+            padding: 60px 20px;
         }
 
-        h1{
-            color:#111;
-            font-size:40px;
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 650px;
+            margin: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
         }
 
-        p{
-            color:#555;
-            font-size:20px;
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
         }
 
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:15px 30px;
-            background:black;
-            color:white;
-            text-decoration:none;
-            border-radius:10px;
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #cbd5e1;
         }
 
+        p {
+            font-size: 18px;
+            color: #e2e8f0;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1ebe5d;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
     </style>
-
 </head>
 
 <body>
 
+<div class="container">
+
     <div class="card">
 
-        <h1>Olá, eu sou a Manuela 💻</h1>
+        <h1>Manuela Web 💻</h1>
+
+        <h2>Desenvolvedora Web em formação</h2>
 
         <p>
-            Técnica de Informática e apaixonada por
-            desenvolvimento web 🌐
+            Crio sites modernos, simples e profissionais utilizando HTML, CSS e JavaScript.
+            Estou em constante aprendizagem e evolução na área da tecnologia.
         </p>
 
-        <p>
-            Criação de sites modernos e profissionais.
-        </p>
-
-        <a class="btn" href="">
-            Contactar
+        <!-- BOTÃO WHATSAPP -->
+        <a class="btn" 
+      https://wa.me/351912885467
+           target="_blank">
+           💬 Falar comigo no WhatsApp
         </a>
 
+        <div class="footer">
+            Portfólio pessoal • Tecnologia & Programação
+        </div>
+
     </div>
+
+</div>
 
 </body>
 </html>
